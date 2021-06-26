@@ -1,0 +1,64 @@
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            outline: none;
+        }
+        /* wait seen... */
+        #screen{
+            background: linear-gradient(90deg,lightblue , silver);
+            text-align: center;
+            height: auto;width: max-content;
+            padding: 5px;
+            border-radius: 5px;
+            margin: auto;
+            color: darkcyan;
+            font-size: 2rem;
+            text-align: center;
+            text-shadow: 0 0 3px black;
+            
+        }
+        /* container and it's stuff */
+        .container{
+            height: 30vh;
+            background:linear-gradient(30deg,indianred,lightblue,hotpink);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15vh auto;
+            width: 85vw;
+            box-shadow: 0 0 1px springgreen, 0 0 5px snow;
+        }
+
+        /* other stuff (footer) */
+        .fotter{
+            background: lightgray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:space-between;
+            padding: 20px;
+            position: relative;
+            top: 22vh;
+        }
+        @media (max-width:472px) {
+            .header{
+
+                flex-direction: column;
+            }
+            .links{
+                justify-content: center;
+                margin: 1rem 0px;
+                margin-bottom: 0px;
+            }
+        }
+        @media (max-width:440px)
+        {
+            .container{
+            justify-content: center;
+            }
+        }
