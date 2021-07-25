@@ -28,7 +28,7 @@
         }
 
         input {
-            height: 10vh !important;
+            height: 100% !important;
             max-height: 50px;
             font-size: 2rem;
             z-index: 3;
@@ -49,6 +49,7 @@
         }
         input[type="submit"] {
             margin: 0px 3% 0px 0px;
+            padding: 0px 12px !important;
         }
         input[type="submit"]:hover{
             cursor: pointer;
@@ -59,7 +60,7 @@
             background: url(./assets/man-bg.jpg) top center /cover no-repeat;
             position: relative;
         }
-        body::before{
+        /* body::before{
             content: "welcome!!";
             font-size: 2rem;
             color: white;
@@ -70,13 +71,13 @@
             display: block;
             background:rgba(78, 78, 138, 0.3);
             z-index: -1;
-        }
+        } */
     </style>
 </head>
 
 <body>
     <div class="container">
-            <input placeholder="Input Number" type="text" id="numb" required>
+            <input placeholder="Input Number" type="text" id="numb" required oninput="chk()">
             <input type="submit" value="OPEN" onclick="send()">
     </div>
     <div id="screen"></div>
